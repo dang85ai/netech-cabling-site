@@ -8,19 +8,21 @@
    ============================================================ */
 
 :root{
-  /* Color */
-  --ink:        #0F1D2E;   /* deep navy — headers, dark panels */
-  --ink-soft:   #17293D;
-  --steel:      #24507E;   /* primary brand blue */
-  --steel-deep: #1B3C60;
-  --slate:      #55677A;   /* secondary text */
-  --slate-soft: #8496A6;
-  --line:       #D7DEE6;   /* hairline / grid */
-  --line-soft:  #E7ECF1;
+  /* Color — derived from the Netech mark: deep navy body, engineered-blue
+     mid tones, and the bright cyan highlight lifted straight off the logo's
+     centre sweep. */
+  --ink:        #0A2A45;   /* deep navy — headers, dark panels */
+  --ink-soft:   #123655;
+  --steel:      #1578B0;   /* primary brand blue, matches logo ring */
+  --steel-deep: #0E5C8A;
+  --slate:      #52697D;   /* secondary text */
+  --slate-soft: #86A0B3;
+  --line:       #D7E4EC;   /* hairline / grid */
+  --line-soft:  #E8F1F6;
   --paper:      #FFFFFF;
-  --paper-off:  #F5F7F9;
-  --signal:     #D98A2B;   /* amber status accent — used sparingly */
-  --signal-soft:#F4E3C6;
+  --paper-off:  #F3F8FB;
+  --signal:     #2FC2EA;   /* bright cyan highlight accent, lifted from the logo */
+  --signal-soft:#D3F1FA;
   --ok:         #2E7D5B;
 
   /* Type */
@@ -74,6 +76,20 @@ button{font-family:inherit;cursor:pointer;}
   display:inline-block;
 }
 
+/* ---------- top utility bar ---------- */
+.top-bar{
+  background:var(--ink);color:rgba(255,255,255,0.72);
+  font-family:var(--f-mono);font-size:12px;letter-spacing:0.01em;
+}
+.top-bar .wrap{
+  display:flex;justify-content:space-between;align-items:center;height:34px;gap:16px;
+}
+.top-bar a{color:inherit;}
+.top-bar a:hover{color:#fff;}
+.top-bar .tb-left, .top-bar .tb-right{display:flex;align-items:center;gap:18px;}
+.top-bar .tb-quote{color:var(--signal);font-weight:600;}
+@media (max-width:720px){.top-bar{display:none;}}
+
 /* ---------- header / nav ---------- */
 .site-header{
   position:sticky;top:0;z-index:50;
@@ -89,8 +105,8 @@ button{font-family:inherit;cursor:pointer;}
   font-family:var(--f-head);font-weight:700;font-size:20px;color:var(--ink);
   display:flex;align-items:center;gap:10px;
 }
-.logo .mark{
-  width:26px;height:26px;flex:none;
+.logo-mark{
+  height:42px;width:auto;flex:none;
 }
 .logo .sub{
   font-family:var(--f-mono);font-size:10.5px;color:var(--steel);
@@ -230,7 +246,7 @@ section{padding:76px 0;}
 /* ---------- why / value grid ---------- */
 .value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
 .value-cell{background:#fff;padding:34px 28px;}
-.value-cell .idx{font-family:var(--f-mono);font-size:12px;color:var(--signal);margin-bottom:16px;display:block;}
+.value-cell .idx{font-family:var(--f-mono);font-size:12px;color:var(--steel-deep);margin-bottom:16px;display:block;}
 .value-cell h3{font-size:19px;margin-bottom:10px;}
 .value-cell p{font-size:14.5px;margin:0;}
 @media (max-width:860px){.value-grid{grid-template-columns:1fr;}}
