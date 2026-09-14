@@ -110,71 +110,15 @@
         <a href="capabilities.html" class="btn btn-outline btn-lg">View Capabilities</a>
       </div>
     </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-visual-grid"></div>
-      <svg class="hero-diagram" viewBox="0 0 480 640" xmlns="http://www.w3.org/2000/svg">
-        <text x="20" y="34" class="dwg-label">DWG NO. NC-RISER-01</text>
-        <text x="460" y="34" class="dwg-label" text-anchor="end">REV A</text>
-
-        <line x1="60" y1="60" x2="60" y2="580" class="dim-line"/>
-        <g class="dim-ticks">
-          <line x1="52" y1="60" x2="68" y2="60"/>
-          <line x1="52" y1="190" x2="68" y2="190"/>
-          <line x1="52" y1="320" x2="68" y2="320"/>
-          <line x1="52" y1="450" x2="68" y2="450"/>
-          <line x1="52" y1="580" x2="68" y2="580"/>
-        </g>
-        <text x="42" y="64" class="dwg-tick" text-anchor="end">00</text>
-        <text x="42" y="194" class="dwg-tick" text-anchor="end">12</text>
-        <text x="42" y="324" class="dwg-tick" text-anchor="end">24</text>
-        <text x="42" y="454" class="dwg-tick" text-anchor="end">36</text>
-        <text x="42" y="584" class="dwg-tick" text-anchor="end">48</text>
-
-        <rect x="170" y="50" width="130" height="540" rx="3" class="rack-frame"/>
-        <g class="rack-rungs">
-          <line x1="170" y1="90" x2="300" y2="90"/>
-          <line x1="170" y1="130" x2="300" y2="130"/>
-          <line x1="170" y1="170" x2="300" y2="170"/>
-          <line x1="170" y1="210" x2="300" y2="210"/>
-          <line x1="170" y1="250" x2="300" y2="250"/>
-          <line x1="170" y1="290" x2="300" y2="290"/>
-          <line x1="170" y1="330" x2="300" y2="330"/>
-          <line x1="170" y1="370" x2="300" y2="370"/>
-          <line x1="170" y1="410" x2="300" y2="410"/>
-          <line x1="170" y1="450" x2="300" y2="450"/>
-          <line x1="170" y1="490" x2="300" y2="490"/>
-          <line x1="170" y1="530" x2="300" y2="530"/>
-        </g>
-        <g class="rack-ports">
-          <rect x="180" y="102" width="7" height="7"/>
-          <rect x="196" y="102" width="7" height="7"/>
-          <rect x="180" y="182" width="7" height="7"/>
-          <rect x="196" y="182" width="7" height="7"/>
-          <rect x="180" y="302" width="7" height="7"/>
-          <rect x="196" y="302" width="7" height="7"/>
-          <rect x="180" y="422" width="7" height="7"/>
-          <rect x="196" y="422" width="7" height="7"/>
-        </g>
-        <text x="185" y="35" class="dwg-label">RACK-01 / MDF</text>
-
-        <path d="M300 110 H360 V150 H440" class="trace trace-active"/>
-        <path d="M300 250 H380 V150" class="trace"/>
-        <path d="M300 330 H360 V440 H440" class="trace trace-active"/>
-        <path d="M300 450 H380 V440" class="trace"/>
-
-        <circle cx="440" cy="150" r="6" class="node node-active"/>
-        <circle cx="380" cy="150" r="5" class="node"/>
-        <circle cx="440" cy="440" r="6" class="node node-active"/>
-        <circle cx="380" cy="440" r="5" class="node"/>
-
-        <text x="452" y="130" class="dwg-tag">RETAIL</text>
-        <text x="452" y="118" class="dwg-tag dwg-tag-dim">SITE 014</text>
-        <text x="392" y="140" class="dwg-tag dwg-tag-dim">CORP</text>
-        <text x="452" y="420" class="dwg-tag">DATA CENTRE</text>
-        <text x="452" y="408" class="dwg-tag dwg-tag-dim">SITE 022</text>
-        <text x="392" y="430" class="dwg-tag dwg-tag-dim">HEALTH</text>
-      </svg>
-      <div class="hero-visual-overlay"></div>
+    <div class="hero-visual">
+      <picture>
+        <source media="(min-width: 861px)" srcset="assets/photos/hero-rack.webp 1x, assets/photos/hero-rack@2x.webp 2x" type="image/webp">
+        <source media="(min-width: 861px)" srcset="assets/photos/hero-rack.jpg 1x, assets/photos/hero-rack@2x.jpg 2x">
+        <source srcset="assets/photos/hero-rack@2x.webp" type="image/webp">
+        <img src="assets/photos/hero-rack@2x.jpg" alt="Completed equipment rack with structured cabling and network switches installed by Netech" width="900" height="1125" loading="eager" fetchpriority="high">
+      </picture>
+      <div class="hero-visual-grid" aria-hidden="true"></div>
+      <div class="hero-visual-overlay" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -268,19 +212,47 @@
     </div>
     <div class="cap-grid">
       <div class="cap-card">
-        <div class="ico-frame"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg></div>
+        <div class="cap-thumb">
+          <picture>
+            <source srcset="assets/photos/cap-structured-cabling.webp 1x, assets/photos/cap-structured-cabling@2x.webp 2x" type="image/webp">
+            <img src="assets/photos/cap-structured-cabling.jpg" srcset="assets/photos/cap-structured-cabling@2x.jpg 2x" alt="Labeled Cat6 patch cables organized and dressed in a network rack" width="400" height="300" loading="lazy">
+          </picture>
+          <div class="cap-thumb-overlay"></div>
+          <div class="ico-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg></div>
+        </div>
         <h3>Structured Cabling</h3><p>Cat6/6A copper backbone and horizontal runs, labeled and tested to TIA/EIA standards.</p>
       </div>
       <div class="cap-card">
-        <div class="ico-frame"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M7 6l-4 6 4 6M17 6l4 6-4 6"/></svg></div>
+        <div class="cap-thumb">
+          <picture>
+            <source srcset="assets/photos/cap-fibre-optics.webp 1x, assets/photos/cap-fibre-optics@2x.webp 2x" type="image/webp">
+            <img src="assets/photos/cap-fibre-optics.jpg" srcset="assets/photos/cap-fibre-optics@2x.jpg 2x" alt="Cisco network switch with labeled SFP fibre uplink ports installed by Netech" width="400" height="300" loading="lazy">
+          </picture>
+          <div class="cap-thumb-overlay"></div>
+          <div class="ico-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M7 6l-4 6 4 6M17 6l4 6-4 6"/></svg></div>
+        </div>
         <h3>Fibre Optics</h3><p>Single-mode and multi-mode fibre builds, splicing, and OTDR-certified testing.</p>
       </div>
       <div class="cap-card">
-        <div class="ico-frame"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h.01M8 11h.01M8 15h.01"/></svg></div>
+        <div class="cap-thumb">
+          <picture>
+            <source srcset="assets/photos/cap-data-centres.webp 1x, assets/photos/cap-data-centres@2x.webp 2x" type="image/webp">
+            <img src="assets/photos/cap-data-centres.jpg" srcset="assets/photos/cap-data-centres@2x.jpg 2x" alt="Data centre rack with labeled patch panels and structured cable management" width="400" height="300" loading="lazy">
+          </picture>
+          <div class="cap-thumb-overlay"></div>
+          <div class="ico-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h.01M8 11h.01M8 15h.01"/></svg></div>
+        </div>
         <h3>Data Centres</h3><p>Rack and stack, containment, and cross-connect builds for hyperscale to edge rooms.</p>
       </div>
       <div class="cap-card">
-        <div class="ico-frame"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 8h14M5 16h14"/></svg></div>
+        <div class="cap-thumb">
+          <picture>
+            <source srcset="assets/photos/cap-wireless-das.webp 1x, assets/photos/cap-wireless-das@2x.webp 2x" type="image/webp">
+            <img src="assets/photos/cap-wireless-das.jpg" srcset="assets/photos/cap-wireless-das@2x.jpg 2x" alt="Netech technician certifying a ceiling-mounted wireless access point with a cable tester" width="400" height="300" loading="lazy">
+          </picture>
+          <div class="cap-thumb-overlay"></div>
+          <div class="ico-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 8h14M5 16h14"/></svg></div>
+        </div>
         <h3>Wireless &amp; DAS</h3><p>Access point deployment and in-building coverage design for retail and corporate floors.</p>
       </div>
       <div class="cap-card">
@@ -288,7 +260,14 @@
         <h3>Security &amp; Access Control</h3><p>CCTV, card access, and intrusion telecommunications infrastructure runs coordinated with your security integrator.</p>
       </div>
       <div class="cap-card">
-        <div class="ico-frame"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div class="cap-thumb">
+          <picture>
+            <source srcset="assets/photos/cap-multisite.webp 1x, assets/photos/cap-multisite@2x.webp 2x" type="image/webp">
+            <img src="assets/photos/cap-multisite.jpg" srcset="assets/photos/cap-multisite@2x.jpg 2x" alt="Row of retail checkout lanes with point-of-sale terminals refreshed by Netech" width="400" height="300" loading="lazy">
+          </picture>
+          <div class="cap-thumb-overlay"></div>
+          <div class="ico-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        </div>
         <h3>Multi-Site Rollouts</h3><p>National program management for retail and franchise refresh cycles, one PM per region.</p>
       </div>
     </div>
