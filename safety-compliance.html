@@ -63,6 +63,7 @@
 </script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <div class="top-bar">
   <div class="wrap">
@@ -77,7 +78,7 @@
       <img src="assets/netech-logo.png" alt="Netech Cabling logo" class="logo-mark">
       <span class="logo-block">NETECH CABLING<span class="sub">STRENGTHENING YOUR BUSINESS</span></span>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <a href="about.html">About</a>
       <a href="capabilities.html">Capabilities</a>
       <a href="why-netech.html">Why Netech</a>
@@ -88,11 +89,11 @@
       <a href="faq.html">FAQ</a>
       <a href="contact.html" class="nav-cta">Request a Quotation</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle menu"></button>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav"></button>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="main">
   <div class="grid-overlay"></div>
   <div class="wrap hero-inner">
     <span class="eyebrow">SAFETY &amp; COMPLIANCE</span>
