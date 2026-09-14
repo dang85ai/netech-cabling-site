@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /*.zip$
+Disallow: /*.bundle$
+Disallow: /*.sql$
+Disallow: /*.tar.gz$
+
+Sitemap: https://www.netechcabling.ca/sitemap.xml
