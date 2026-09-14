@@ -1,0 +1,5 @@
+# Deployment/build archives should never live in the public web root
+*.zip
+*.bundle
+*.tar.gz
+*.sql
