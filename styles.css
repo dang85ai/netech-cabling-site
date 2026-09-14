@@ -378,6 +378,11 @@ section{padding:76px 0;}
   font-family:var(--f-head);font-weight:700;font-size:18px;color:var(--slate-soft);
   letter-spacing:0.01em;
 }
+.logo-strip .lg-img{
+  height:44px;width:auto;max-width:150px;object-fit:contain;
+  filter:grayscale(1);opacity:0.75;transition:filter .2s ease,opacity .2s ease;
+}
+.logo-strip .lg-img:hover{filter:grayscale(0);opacity:1;}
 
 /* ---------- final CTA banner ---------- */
 .cta-band{
